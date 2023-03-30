@@ -1,0 +1,259 @@
+/* * WomenImg */
+.women-img-container img {
+	width: 50%;
+}
+.women-img-container img:nth-child(2) {
+	position: absolute;
+	left: 60px;
+	z-index: -1;
+	width: 50%;
+	height: 100vh;
+}
+
+/* * GridLogo */
+.gridlogo-container {
+	position: absolute;
+	top: 50px;
+	right: 135px;
+	z-index: 2;
+
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 5px;
+	height: fit-content;
+	width: fit-content;
+}
+
+#gridLogo-item-0 {
+	grid-row-start: 1;
+	grid-column-start: 1;
+
+	grid-row-end: 2;
+	grid-column-end: 2;
+}
+#gridLogo-item-1 {
+	grid-row-start: 1;
+	grid-column-start: 2;
+
+	grid-row-end: 2;
+	grid-column-end: 3;
+}
+#gridLogo-item-2 {
+	grid-row-start: 1;
+	grid-column-start: 3;
+
+	grid-row-end: 2;
+	grid-column-end: 4;
+}
+#gridLogo-item-3 {
+	grid-row-start: 1;
+	grid-column-start: 4;
+
+	grid-row-end: 2;
+	grid-column-end: 5;
+}
+#gridLogo-item-4 {
+	grid-row-start: 2;
+	grid-column-start: 1;
+
+	grid-row-end: 3;
+	grid-column-end: 2;
+}
+#gridLogo-item-5 {
+	grid-row-start: 2;
+	grid-column-start: 2;
+
+	grid-row-end: 3;
+	grid-column-end: 3;
+}
+#gridLogo-item-6 {
+	grid-row-start: 2;
+	grid-column-start: 3;
+
+	grid-row-end: 3;
+	grid-column-end: 4;
+}
+#gridLogo-item-7 {
+	grid-row-start: 2;
+	grid-column-start: 4;
+
+	grid-row-end: 3;
+	grid-column-end: 5;
+}
+#gridLogo-item-8 {
+	grid-row-start: 3;
+	grid-column-start: 1;
+
+	grid-row-end: 4;
+	grid-column-end: 2;
+}
+#gridLogo-item-9 {
+	grid-row-start: 3;
+	grid-column-start: 2;
+
+	grid-row-end: 4;
+	grid-column-end: 3;
+}
+#gridLogo-item-10 {
+	grid-row-start: 3;
+	grid-column-start: 3;
+
+	grid-row-end: 4;
+	grid-column-end: 4;
+}
+#gridLogo-item-11 {
+	grid-row-start: 3;
+	grid-column-start: 4;
+
+	grid-row-end: 4;
+	grid-column-end: 5;
+}
+#gridLogo-item-12 {
+	grid-row-start: 4;
+	grid-column-start: 4;
+
+	grid-row-end: 5;
+	grid-column-end: 5;
+}
+#gridLogo-item-13 {
+	grid-row-start: 5;
+	grid-column-start: 4;
+
+	grid-row-end: 6;
+	grid-column-end: 5;
+	transform: scale(1.5);
+}
+#gridLogo-item-14 {
+	grid-row-start: 5;
+	grid-column-start: 5;
+
+	grid-row-end: 6;
+	grid-column-end: 6;
+}
+#gridLogo-item-15 {
+	grid-row-start: 5;
+	grid-column-start: 6;
+
+	grid-row-end: 6;
+	grid-column-end: 7;
+}
+#gridLogo-item-16 {
+	grid-row-start: 5;
+	grid-column-start: 7;
+
+	grid-row-end: 6;
+	grid-column-end: 8;
+}
+#gridLogo-item-17 {
+	grid-row-start: 6;
+	grid-column-start: 4;
+
+	grid-row-end: 7;
+	grid-column-end: 5;
+}
+#gridLogo-item-18 {
+	grid-row-start: 6;
+	grid-column-start: 5;
+
+	grid-row-end: 7;
+	grid-column-end: 6;
+}
+#gridLogo-item-19 {
+	grid-row-start: 6;
+	grid-column-start: 6;
+
+	grid-row-end: 7;
+	grid-column-end: 7;
+}
+#gridLogo-item-20 {
+	grid-row-start: 6;
+	grid-column-start: 7;
+
+	grid-row-end: 7;
+	grid-column-end: 8;
+}
+#gridLogo-item-21 {
+	grid-row-start: 4;
+	grid-column-start: 1;
+
+	grid-row-end: 5;
+	grid-column-end: 2;
+}
+#gridLogo-item-22 {
+	grid-row-start: 4;
+	grid-column-start: 2;
+
+	grid-row-end: 5;
+	grid-column-end: 3;
+}
+#gridLogo-item-23 {
+	grid-row-start: 4;
+	grid-column-start: 3;
+
+	grid-row-end: 5;
+	grid-column-end: 4;
+}
+#gridLogo-item-24 {
+	grid-row-start: 7;
+	grid-column-start: 4;
+
+	grid-row-end: 8;
+	grid-column-end: 5;
+}
+#gridLogo-item-25 {
+	grid-row-start: 7;
+	grid-column-start: 5;
+
+	grid-row-end: 8;
+	grid-column-end: 6;
+}
+#gridLogo-item-26 {
+	grid-row-start: 7;
+	grid-column-start: 6;
+
+	grid-row-end: 8;
+	grid-column-end: 7;
+}
+#gridLogo-item-27 {
+	grid-row-start: 7;
+	grid-column-start: 7;
+
+	grid-row-end: 8;
+	grid-column-end: 8;
+}
+#gridLogo-item-28 {
+	grid-row-start: 8;
+	grid-column-start: 4;
+
+	grid-row-end: 9;
+	grid-column-end: 5;
+}
+#gridLogo-item-29 {
+	grid-row-start: 8;
+	grid-column-start: 5;
+
+	grid-row-end: 9;
+	grid-column-end: 6;
+}
+#gridLogo-item-30 {
+	grid-row-start: 8;
+	grid-column-start: 6;
+
+	grid-row-end: 9;
+	grid-column-end: 7;
+}
+#gridLogo-item-31 {
+	grid-row-start: 8;
+	grid-column-start: 7;
+
+	grid-row-end: 9;
+	grid-column-end: 8;
+}
+
+.gridLogo-visible {
+	background-color: #cfdce7;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+}

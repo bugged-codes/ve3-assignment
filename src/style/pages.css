@@ -1,0 +1,33 @@
+/* * Home Page */
+.home-text {
+	width: 25%;
+	position: absolute;
+	right: 100px;
+	top: 110px;
+	z-index: 1;
+	font-family: 'Roboto', sans-serif;
+	color: #0d4f86;
+	line-height: 2.5em;
+}
+.home-text p {
+	color: #0d4f86;
+}
+.home-enter-link > button {
+	width: 90%;
+	height: 50px;
+	background-color: #0d4f86;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	font-size: 1.4em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	align-items: center;
+	font-weight: 100;
+	cursor: pointer;
+}
+a[class='home-enter-link'] {
+	text-decoration: none;
+}

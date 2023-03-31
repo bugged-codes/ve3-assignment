@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# To make this project work in your machine follow below steps:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+1. Clone this repo.
+2. Open terminal inside the project directory, and give command `npm install` 
+3. After npm has completed installing packages, give `npm run start`command in same terminal.
+4. That's it now the react script will compile the webpack and open your machine's default browser window tab to launch this project live.
+5. If the browser didn't open automatically, you can open the react project in your machine's browser by going to [http://localhost:3000](http://localhost:3000) to view the live project.
 
 ## Available Scripts
 

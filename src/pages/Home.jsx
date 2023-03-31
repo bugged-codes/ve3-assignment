@@ -13,7 +13,7 @@ const Home = () => {
 	return (
 		<div className="page home">
 			<GridLogo />
-			<WomenImg id={contextData[0].id} img={contextData[0].imgPath} img2={contextData[1].imgPath} />
+			<WomenImg id={contextData[0].id} img1={[contextData[0].imgPath, contextData[0].imgAlt]} img2={[contextData[1].imgPath, contextData[1].imgAlt]} />
 			<div className="home-text">
 				<h1>Fusce sem magna pharetra cursus</h1>
 				<p>

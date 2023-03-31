@@ -7,6 +7,9 @@ page2 => comp-1 + comp-2 + button to home + comp-3s
 added animation class toggle with ternary operator and useState to toggle button click animation on 2nd page.
 all 5 module pages as reusable components 
 
+
+tabsNav component->tabsNav wrapper->active-nav+(visible-tabCard->tabCard component->tabCard-Container->(img+text))
+
 <!-- bing answer to search functionality that's given on last page -->
 You can create a search feature in your webapp that searches the data stored in the context API's store by following these steps:
 

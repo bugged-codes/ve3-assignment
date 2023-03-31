@@ -21,7 +21,7 @@ const Page2 = () => {
 	return (
 		<div className="page page-2">
 			<GridLogo />
-			<WomenImg id={contextData[0].id} img={contextData[0].imgPath} img2={contextData[1].imgPath} />
+			<WomenImg id={contextData[0].id} img1={[contextData[0].imgPath, contextData[0].imgAlt]} img2={[contextData[1].imgPath, contextData[1].imgAlt]} />
 			<HomePageRoute className={`${isClicked ? 'anim-highlight' : ''}`} />
 			<div className="p2-link-container">
 				<Link to={'/module-1'} className={`${isClicked ? 'anim-highlight' : ''}`}>

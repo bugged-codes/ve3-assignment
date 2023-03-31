@@ -10,7 +10,9 @@ const TabsNav = (props) => {
 	const [isVisible2, setIsVisible2] = useState(false);
 	const [isVisible3, setIsVisible3] = useState(false);
 	const handleTab1 = () => {
-		setIsVisible1((i) => !i);
+		if (isVisible1 === false) {
+			setIsVisible1((i) => !i);
+		}
 
 		if (isVisible2 === true) {
 			setIsVisible2((j) => !j);
@@ -19,7 +21,9 @@ const TabsNav = (props) => {
 		}
 	};
 	const handleTab2 = () => {
-		setIsVisible2((i) => !i);
+		if (isVisible2 === false) {
+			setIsVisible2((i) => !i);
+		}
 
 		if (isVisible1 === true) {
 			setIsVisible1((j) => !j);
@@ -28,7 +32,9 @@ const TabsNav = (props) => {
 		}
 	};
 	const handleTab3 = () => {
-		setIsVisible3((i) => !i);
+		if (isVisible3 === false) {
+			setIsVisible3((i) => !i);
+		}
 
 		if (isVisible1 === true) {
 			setIsVisible1((j) => !j);
@@ -39,18 +45,19 @@ const TabsNav = (props) => {
 	return (
 		<div className="tabsNav-component components">
 			<div className="tabsNav-wrapper">
-				<NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab1}>
-					{data[0].tabName}
-				</NavLink>
-				<NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab2}>
-					{data[0].tabName}
-				</NavLink>
-				<NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab3}>
-					{data[0].tabName}
-				</NavLink>
+				<div className="tabsNav-link-container">
+					<NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab1}>
+						<div>{data[0].tabName}</div>
+					</NavLink>
+					<NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab2}>
+						<div>{data[0].tabName}</div>
+					</NavLink>
+					<NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab3}>
+						<div>{data[0].tabName}</div>
+					</NavLink>
+				</div>
 				{isVisible1 && (
 					<div className={isVisible1 ? 'visible-tabDescription' : 'hidden-tabDescription'}>
-						hi1
 						{isVisible1 && (
 							<TabCard
 								fromNavData={data.filter((item) => {
@@ -62,7 +69,6 @@ const TabsNav = (props) => {
 				)}
 				{isVisible2 && (
 					<div className={isVisible2 ? 'visible-tabDescription' : 'hidden-tabDescription'}>
-						hi2
 						{isVisible2 && (
 							<TabCard
 								fromNavData={data.filter((item) => {
@@ -74,7 +80,6 @@ const TabsNav = (props) => {
 				)}
 				{isVisible3 && (
 					<div className={isVisible3 ? 'visible-tabDescription' : 'hidden-tabDescription'}>
-						hi3
 						{isVisible3 && (
 							<TabCard
 								fromNavData={data.filter((item) => {

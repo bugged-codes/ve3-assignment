@@ -3,10 +3,12 @@ body {
 	margin: 0;
 }
 
-.link2home {
-	all: unset;
+#link2home {
+	text-decoration: none;
+	color: white;
 	position: absolute;
 	top: 40px;
 	right: 50px;
 	cursor: pointer;
+	background-color: transparent;
 }

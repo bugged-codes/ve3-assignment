@@ -12,7 +12,8 @@
 .home-text p {
 	color: #0d4f86;
 }
-.home-enter-link > button {
+.home-enter-link > div,
+.p2-enter {
 	width: 90%;
 	height: 50px;
 	background-color: #0d4f86;
@@ -27,7 +28,75 @@
 	align-items: center;
 	font-weight: 100;
 	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
 }
+
 a[class='home-enter-link'] {
 	text-decoration: none;
+}
+
+/* * Page2 */
+.p2-link-container a {
+	text-decoration: none;
+	width: 75%;
+	background-color: transparent;
+	color: #336a99;
+}
+.p2-link-container a:visited {
+	color: #336a99;
+}
+.p2-link-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 30%;
+	height: 450px;
+	position: absolute;
+	top: 100px;
+	right: 40px;
+	font-size: 1.3em;
+	color: #17568b;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
+.p2-links2modules {
+	border-bottom: 2px solid #c6c6c6;
+	padding-bottom: 25px;
+}
+a[href='/module-5'] > div {
+	border-bottom: none;
+}
+.anim-highlight {
+	animation-name: anim-highlight;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
+}
+@keyframes anim-highlight {
+	0% {
+		background-color: transparent;
+		color: rgb(23, 86, 139);
+	}
+	33% {
+		background-color: lightblue;
+		color: white;
+	}
+	66% {
+		background-color: rgba(63, 150, 255, 0.78);
+		color: white;
+	}
+	100% {
+		background-color: transparent;
+		color: #17568b;
+	}
+}
+.p2-enter {
+	width: 314px;
+	position: absolute;
+	right: 135px;
+	bottom: 86px;
 }

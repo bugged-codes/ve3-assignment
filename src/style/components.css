@@ -10,6 +10,14 @@
 	height: 100vh;
 }
 
+/* * TabsNav */
+.visible-tabDescription {
+	background-color: darkred;
+}
+.hidden-tabDescription {
+	display: hidden;
+}
+
 /* * GridLogo */
 .gridlogo-container {
 	position: absolute;

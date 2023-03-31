@@ -9,7 +9,7 @@ import '../style/pages.css';
 
 const Home = () => {
 	const [contextData] = useContext(context);
-	console.log('Context is: ', contextData);
+	// console.log('Context is: ', contextData);
 	return (
 		<div className="page home">
 			<GridLogo />
@@ -20,10 +20,10 @@ const Home = () => {
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia reprehenderit ullam, eveniet laborum aliquam aspernatur eius reiciendis a magni pariatur dolore eaque ducimus temporibus dolorem, quam eos assumenda, natus inventore sed labore odio quae quod repellat ipsam. Quidem.
 				</p>
 				<Link className="home-enter-link" to={'/page2'}>
-					<button>
+					<div>
 						Enter
 						<FontAwesomeIcon icon={faArrowRightLong} />
-					</button>
+					</div>
 				</Link>
 			</div>
 		</div>

@@ -1,6 +1,11 @@
-components => 1.empower women img, 2.text div that includes button, 3.links to modules
-page 1 => comp-1 + comp-2
-page 2 => comp-1 + comp-3s
+created context store for all images and data along with module and tab as properties.
+
+components => 1.empower women img, 2.7*7 grid icon, 3.reusable module page.
+Home => comp-1 + comp-2 + text + button to page2
+page2 => comp-1 + comp-2 + button to home + comp-3s
+
+added animation class toggle with ternary operator and useState to toggle button click animation on 2nd page.
+all 5 module pages as reusable components 
 
 <!-- bing answer to search functionality that's given on last page -->
 You can create a search feature in your webapp that searches the data stored in the context API's store by following these steps:

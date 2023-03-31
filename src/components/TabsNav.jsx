@@ -50,10 +50,10 @@ const TabsNav = (props) => {
 						<div>{data[0].tabName}</div>
 					</NavLink>
 					<NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab2}>
-						<div>{data[0].tabName}</div>
+						<div>{data[1].tabName}</div>
 					</NavLink>
 					<NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab3}>
-						<div>{data[0].tabName}</div>
+						<div>{data[2].tabName}</div>
 					</NavLink>
 				</div>
 				{isVisible1 && (

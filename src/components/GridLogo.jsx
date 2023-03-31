@@ -1,9 +1,9 @@
 import React from 'react';
 import '../style/components.css';
 
-const GridLogo = () => {
+const GridLogo = (props) => {
 	return (
-		<div className="gridlogo-container">
+		<div className={`gridLogo-container ${props.className}`}>
 			<div className="gridLogo-visible" id="gridLogo-item-0">
 				&nbsp;
 			</div>

@@ -108,3 +108,13 @@ a[href='/module-5'] > div {
 	top: 40px;
 	left: 90px;
 }
+.bottomPage-gridLogo {
+	position: absolute;
+	bottom: -20px;
+	right: 10px;
+	transform: rotateY(180deg) scale(1.2);
+	top: unset;
+}
+.bottomPage-gridLogo > .gridLogo-visible {
+	background-color: #0d4f86;
+}

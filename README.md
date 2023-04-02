@@ -8,6 +8,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4. That's it now the react script will compile the webpack and open your machine's default browser window tab to launch this project live.
 5. If the browser didn't open automatically, you can open the react project in your machine's browser by going to [http://localhost:3000](http://localhost:3000) to view the live project.
 
+---
+
+## Design Link
+[https://xd.adobe.com/view/6ee8c57e-1a04-4784-9ccb-a0036ee82317-3bbb/screen/46318243-65a4-47cd-9d3b-df9aa12107ae ](https://xd.adobe.com/view/6ee8c57e-1a04-4784-9ccb-a0036ee82317-3bbb/screen/46318243-65a4-47cd-9d3b-df9aa12107ae "Adobe XD design")
+
+
+---
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -9,7 +9,6 @@ import Module4 from '../pages/Module4';
 import Module5 from '../pages/Module5';
 import Page2 from '../pages/Page2';
 import SearchPage from '../pages/SearchPage';
-import SearchContext from '../components/SearchContext';
 
 const MasterRouter = () => {
 	return (

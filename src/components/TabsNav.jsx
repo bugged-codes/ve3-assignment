@@ -9,6 +9,8 @@ const TabsNav = (props) => {
 	const [isVisible1, setIsVisible1] = useState(true);
 	const [isVisible2, setIsVisible2] = useState(false);
 	const [isVisible3, setIsVisible3] = useState(false);
+
+	// simple boolean logic toggling of different data, after a registered click on tab.
 	const handleTab1 = (e) => {
 		console.log('events are: ', e.target.className);
 		if (isVisible1 === false) {
@@ -47,9 +49,9 @@ const TabsNav = (props) => {
 		<div className="tabsNav-component components">
 			<div className="tabsNav-wrapper">
 				<div className="tabsNav-link-container">
-					<div className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab1}>
+					<NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab1}>
 						<div>{data[0].tabName}</div>
-					</div>
+					</NavLink>
 					<NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab2}>
 						<div>{data[1].tabName}</div>
 					</NavLink>

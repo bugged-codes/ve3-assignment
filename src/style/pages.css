@@ -100,6 +100,13 @@ a[href='/module-5'] > div {
 	bottom: 86px;
 }
 
+/* * SearchResult */
+.search-page {
+	background-color: #0d4f86;
+	height: 100vh;
+	border-radius: 5px;
+}
+
 /* * ALL Module PAGES */
 .modules > h1 {
 	color: #0d4f86;
@@ -118,3 +125,13 @@ a[href='/module-5'] > div {
 .bottomPage-gridLogo > .gridLogo-visible {
 	background-color: #0d4f86;
 }
+
+/* * SearchPage */
+.searchPage-gridLogo > .gridLogo-visible {
+	background-color: #336a99;
+}
+
+/* ! works but, still spawn one unwanted row.
+.hidden-on-modulesPage {
+	display: none;
+} */

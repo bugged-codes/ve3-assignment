@@ -1,19 +1,19 @@
 import React, { useContext } from 'react';
 import GridLogo from '../components/GridLogo';
 import WomenImg from '../components/WomenImg';
-import { context } from '../data/ContextData';
+import context from '../data/ContextData';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import '../style/pages.css';
 
 const Home = () => {
-	const [contextData] = useContext(context);
-	// console.log('Context is: ', contextData);
+	const { data } = useContext(context);
+	console.log('Context is: ', data);
 	return (
 		<div className="page home">
 			<GridLogo />
-			<WomenImg id={contextData[0].id} img1={[contextData[0].imgPath, contextData[0].imgAlt]} img2={[contextData[1].imgPath, contextData[1].imgAlt]} />
+			<WomenImg id={data[0].id} img1={[data[0].imgPath, data[0].imgAlt]} img2={[data[1].imgPath, data[1].imgAlt]} />
 			<div className="home-text">
 				<h1>Fusce sem magna pharetra cursus</h1>
 				<p>

@@ -9,7 +9,7 @@ const HomePageRoute = (props) => {
 	return (
 		<>
 			<Link id="link2home" to={'/'} className={props.className}>
-				<FontAwesomeIcon icon={faHouse} style={{ color: '#b0b0b0' }} size="2xl" />
+				<FontAwesomeIcon icon={faHouse} style={{ color: '#b0b0b0' }} size="lg" />
 			</Link>
 		</>
 	);

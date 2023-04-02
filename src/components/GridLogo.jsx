@@ -76,28 +76,28 @@ const GridLogo = (props) => {
 			<div className="gridLogo-visible" id="gridLogo-item-23">
 				&nbsp;
 			</div>
-			<div className="gridLogo-visible" id="gridLogo-item-24">
+			<div className="gridLogo-visible hidden-on-modulesPage" id="gridLogo-item-24">
 				&nbsp;
 			</div>
-			<div className="gridLogo-visible" id="gridLogo-item-25">
+			<div className="gridLogo-visible hidden-on-modulesPage" id="gridLogo-item-25">
 				&nbsp;
 			</div>
-			<div className="gridLogo-visible" id="gridLogo-item-26">
+			<div className="gridLogo-visible hidden-on-modulesPage" id="gridLogo-item-26">
 				&nbsp;
 			</div>
-			<div className="gridLogo-visible" id="gridLogo-item-27">
+			<div className="gridLogo-visible hidden-on-modulesPage" id="gridLogo-item-27">
 				&nbsp;
 			</div>
-			<div className="gridLogo-visible" id="gridLogo-item-28">
+			<div className="gridLogo-visible hidden-on-modulesPage" id="gridLogo-item-28">
 				&nbsp;
 			</div>
-			<div className="gridLogo-visible" id="gridLogo-item-29">
+			<div className="gridLogo-visible hidden-on-modulesPage" id="gridLogo-item-29">
 				&nbsp;
 			</div>
-			<div className="gridLogo-visible" id="gridLogo-item-30">
+			<div className="gridLogo-visible hidden-on-modulesPage" id="gridLogo-item-30">
 				&nbsp;
 			</div>
-			<div className="gridLogo-visible" id="gridLogo-item-31">
+			<div className="gridLogo-visible hidden-on-modulesPage" id="gridLogo-item-31">
 				&nbsp;
 			</div>
 		</div>

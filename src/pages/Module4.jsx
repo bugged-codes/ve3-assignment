@@ -1,14 +1,15 @@
 import React, { useContext } from 'react';
-import { context } from '../data/ContextData';
+import context from '../data/ContextData';
 import HomePageRoute from '../components/HomePageRoute';
 import TabsNav from '../components/TabsNav';
 import GridLogo from '../components/GridLogo';
+import SearchPageRoute from '../components/SearchPageRoute';
 import '../style/components.css';
 import '../style/pages.css';
 
 const Module4 = () => {
-	const [contextData] = useContext(context);
-	const filterdData = contextData.filter((item) => item.moduleName === 'Module Four');
+	const { data } = useContext(context);
+	const filterdData = data.filter((item) => item.moduleName === 'Module Four');
 	console.log('filterdData is:', filterdData);
 	return (
 		<div className="modules ">
@@ -16,6 +17,7 @@ const Module4 = () => {
 			<HomePageRoute />
 			<TabsNav data={filterdData} />
 			<GridLogo className="bottomPage-gridLogo" />
+			<SearchPageRoute />
 		</div>
 	);
 };

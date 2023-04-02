@@ -71,3 +71,19 @@ const MyComponent = () => {
 In this example, we import the `SearchContext` and use its state and function to perform a search. We also render the search results in a list.
 
 I hope this helps! Let me know if you have any more questions.
+
+
+
+
+{/* <p>showing {filterdData.length} results</p> */}
+				<ul className="searchBar-list">
+					{/* {querry &&
+						filterdData &&
+						filterdData.map((item) => {
+							console.log('Mapped items are: ', item);
+							return (
+								<li className="search-listItem" key={item.id}>
+									{item}
+								</li>
+							);
+						})} */}

@@ -2,14 +2,14 @@ import React, { useContext, useState } from 'react';
 import GridLogo from '../components/GridLogo';
 import WomenImg from '../components/WomenImg';
 import HomePageRoute from '../components/HomePageRoute';
-import { context } from '../data/ContextData';
+import context from '../data/ContextData';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import '../style/pages.css';
 
 const Page2 = () => {
-	const [contextData] = useContext(context);
+	const { data } = useContext(context);
 	const [isClicked, setIsClicked] = useState(false);
 	const handleHighlight = () => {
 		setIsClicked((curr) => !curr);
@@ -21,7 +21,7 @@ const Page2 = () => {
 	return (
 		<div className="page page-2">
 			<GridLogo />
-			<WomenImg id={contextData[0].id} img1={[contextData[0].imgPath, contextData[0].imgAlt]} img2={[contextData[1].imgPath, contextData[1].imgAlt]} />
+			<WomenImg id={data[0].id} img1={[data[0].imgPath, data[0].imgAlt]} img2={[data[1].imgPath, data[1].imgAlt]} />
 			<HomePageRoute className={`${isClicked ? 'anim-highlight' : ''}`} />
 			<div className="p2-link-container">
 				<Link to={'/module-1'} className={`${isClicked ? 'anim-highlight' : ''}`}>

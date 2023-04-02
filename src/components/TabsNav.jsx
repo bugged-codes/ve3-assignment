@@ -9,7 +9,8 @@ const TabsNav = (props) => {
 	const [isVisible1, setIsVisible1] = useState(true);
 	const [isVisible2, setIsVisible2] = useState(false);
 	const [isVisible3, setIsVisible3] = useState(false);
-	const handleTab1 = () => {
+	const handleTab1 = (e) => {
+		console.log('events are: ', e.target.className);
 		if (isVisible1 === false) {
 			setIsVisible1((i) => !i);
 		}
@@ -46,9 +47,9 @@ const TabsNav = (props) => {
 		<div className="tabsNav-component components">
 			<div className="tabsNav-wrapper">
 				<div className="tabsNav-link-container">
-					<NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab1}>
+					<div className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab1}>
 						<div>{data[0].tabName}</div>
-					</NavLink>
+					</div>
 					<NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'nonActive-nav')} onClick={handleTab2}>
 						<div>{data[1].tabName}</div>
 					</NavLink>
@@ -57,7 +58,7 @@ const TabsNav = (props) => {
 					</NavLink>
 				</div>
 				{isVisible1 && (
-					<div className={isVisible1 ? 'visible-tabDescription' : 'hidden-tabDescription'}>
+					<div className={isVisible1 ? 'visible-tabDescription' : 'hidden'}>
 						{isVisible1 && (
 							<TabCard
 								fromNavData={data.filter((item) => {
@@ -68,7 +69,7 @@ const TabsNav = (props) => {
 					</div>
 				)}
 				{isVisible2 && (
-					<div className={isVisible2 ? 'visible-tabDescription' : 'hidden-tabDescription'}>
+					<div className={isVisible2 ? 'visible-tabDescription' : 'hidden'}>
 						{isVisible2 && (
 							<TabCard
 								fromNavData={data.filter((item) => {
@@ -79,7 +80,7 @@ const TabsNav = (props) => {
 					</div>
 				)}
 				{isVisible3 && (
-					<div className={isVisible3 ? 'visible-tabDescription' : 'hidden-tabDescription'}>
+					<div className={isVisible3 ? 'visible-tabDescription' : 'hidden'}>
 						{isVisible3 && (
 							<TabCard
 								fromNavData={data.filter((item) => {

@@ -1,22 +1,30 @@
 import React, { createContext, useState } from 'react';
 
-export const context = createContext();
+const context = createContext();
 
-const ContextData = (props) => {
+export function ContextData({ children }) {
 	const [data, setData] = useState([
 		{
 			id: 1,
 			moduleNo: 0,
+			moduleName: '0',
 			tabNo: 0,
+			tabName: '0',
+			titleText: '0',
 			imgPath: '/assets/images/img-1.png',
 			imgAlt: 'Women holding spectacles in her hand representing business women.',
+			descriptionText: 'NONE',
 		},
 		{
 			id: 2,
-			moduleId: 0,
-			tabId: 0,
+			moduleNo: 0,
+			moduleName: '0',
+			tabNo: 0,
+			tabName: '0',
+			titleText: '0',
 			imgPath: '/assets/images/img-2.png',
 			imgAlt: 'Background Graphics.',
+			descriptionText: 'NONE',
 		},
 		{
 			id: 3,
@@ -201,9 +209,9 @@ const ContextData = (props) => {
 	]);
 	return (
 		<>
-			<context.Provider value={[data, setData]}>{props.children}</context.Provider>
+			<context.Provider value={{ data, setData }}>{children}</context.Provider>
 		</>
 	);
-};
+}
 
-export default ContextData;
+export default context;
